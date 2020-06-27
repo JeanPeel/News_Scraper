@@ -3,7 +3,7 @@
 var db = require('../models');
 var scrape = require('../scriptw/scrape');
 
-module.exports{
+module.exports = {
     scrapeHeadlines: function(req, res) {
         // scrape the NYT
         return scrape()
@@ -20,7 +20,7 @@ module.exports{
                     // otherwise send back a count of how many articles we have
                     res.json({
                         message: 'Added ' + dbHeadline.length + ' new articles!'
-                    }):
+                    });
                 }
             })
             .catch(function (err) {
