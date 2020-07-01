@@ -34,6 +34,12 @@ var headlineSchema = new Schema({
     type: Boolean,
     default: false
   }
+//   useNewUrlPanprser: true,
+//   location: {
+//     type: { type: String },
+//     coordinates: [],
+    // required: true
+    // }
 });
 
 // Create the Headline model using the headlineSchema

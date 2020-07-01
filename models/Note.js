@@ -20,6 +20,12 @@ var noteSchema = new Schema({
   },
   // as is the noteText
   noteText: String
+//   useNewUrlParser: true,
+//   location: {
+//     type: { type: String },
+//     coordinates: [],
+    // required: true
+    // }
 });
 
 // Create the Note model using the noteSchema
